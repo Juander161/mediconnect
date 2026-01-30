@@ -256,159 +256,19 @@ function App() {
     },
   ]
 
-  // Curiosidades Médicas Saludables
-  const healthTips = [
-    {
-      id: 1,
-      title: '💧 Hidratación Inteligente',
-      tip: 'Beber agua antes de las comidas ayuda a controlar el apetito',
-      detail: 'Consumir un vaso de agua 30 minutos antes de cada comida puede ayudarte a comer menos y mejorar la digestión. Tu cuerpo a veces confunde la sed con hambre.',
-      benefit: 'Control de peso, mejor digestión, más energía durante el día'
-    },
-    {
-      id: 2,
-      title: '🚶 Caminar Después de Comer',
-      tip: 'Una caminata de 15 minutos después de comer reduce el azúcar en sangre',
-      detail: 'Dar un paseo ligero después de las comidas principales ayuda a tu cuerpo a procesar mejor la glucosa, reduciendo los picos de azúcar hasta en un 30%.',
-      benefit: 'Mejor control de azúcar, digestión mejorada, prevención de diabetes'
-    },
-    {
-      id: 3,
-      title: '😴 Horarios de Sueño Consistentes',
-      tip: 'Dormir y despertar a la misma hora fortalece tu sistema inmune',
-      detail: 'Mantener un horario regular de sueño, incluso los fines de semana, mejora la calidad del descanso y fortalece las defensas naturales de tu cuerpo.',
-      benefit: 'Mejor sistema inmune, más energía, menor riesgo de enfermedades'
-    },
-    {
-      id: 4,
-      title: '🥗 Colores en tu Plato',
-      tip: 'Cuantos más colores naturales en tu plato, más nutrientes consumes',
-      detail: 'Cada color en frutas y verduras representa diferentes antioxidantes y nutrientes. Intenta tener al menos 3 colores diferentes en cada comida principal.',
-      benefit: 'Nutrición completa, antioxidantes variados, mejor salud general'
-    },
-    {
-      id: 5,
-      title: '🧘 Respiración Profunda',
-      tip: 'Respirar profundo 5 minutos al día reduce la presión arterial',
-      detail: 'La técnica 4-7-8: Inhala por la nariz contando hasta 4, mantén 7 segundos, exhala por la boca en 8. Reduce estrés y mejora la función cardiovascular.',
-      benefit: 'Menor presión arterial, menos estrés, mejor concentración'
-    },
-    {
-      id: 6,
-      title: '☀️ Luz Solar Matutina',
-      tip: '15 minutos de sol en la mañana mejoran tu ciclo de sueño',
-      detail: 'La exposición a luz natural temprano en el día ayuda a regular tu ritmo circadiano, produciendo melatonina en el momento correcto por la noche.',
-      benefit: 'Mejor sueño nocturno, más vitamina D, estado de ánimo mejorado'
-    },
-    {
-      id: 7,
-      title: '🦷 Salud Bucal y Corazón',
-      tip: 'Cepillarte los dientes después de cada comida protege tu corazón',
-      detail: 'Las bacterias de la boca pueden entrar al torrente sanguíneo. Una buena higiene bucal reduce el riesgo de enfermedades cardiovasculares hasta en un 20%.',
-      benefit: 'Corazón más sano, menos inflamación, prevención de gingivitis'
-    },
-    {
-      id: 8,
-      title: '🍵 Té Verde por la Tarde',
-      tip: 'Una taza de té verde aumenta tu metabolismo naturalmente',
-      detail: 'El té verde contiene catequinas que aceleran el metabolismo y ayudan a quemar grasa. Es especialmente efectivo si lo tomas entre comidas.',
-      benefit: 'Metabolismo acelerado, antioxidantes, mejor concentración'
-    },
-    {
-      id: 9,
-      title: '🏃 Ejercicio en Intervalos',
-      tip: '20 minutos de ejercicio intenso valen más que 1 hora de actividad ligera',
-      detail: 'El entrenamiento en intervalos de alta intensidad (HIIT) quema más calorías, fortalece el corazón y aumenta tu metabolismo por horas después del ejercicio.',
-      benefit: 'Más resultados en menos tiempo, corazón fuerte, calorías quemadas'
-    },
-    {
-      id: 10,
-      title: '🧠 Aprender Cosas Nuevas',
-      tip: 'Aprender algo nuevo cada día mantiene tu cerebro joven',
-      detail: 'Estudiar un idioma, tocar un instrumento o incluso resolver crucigramas crea nuevas conexiones neuronales, reduciendo el riesgo de demencia.',
-      benefit: 'Cerebro más joven, mejor memoria, prevención de Alzheimer'
-    },
-    {
-      id: 11,
-      title: '🤝 Conexiones Sociales',
-      tip: 'Las amistades cercanas alargan tu esperanza de vida',
-      detail: 'Tener relaciones sociales sólidas reduce el estrés, mejora el sistema inmune y puede agregar hasta 7 años a tu esperanza de vida.',
-      benefit: 'Vida más larga, menos estrés, mejor salud mental'
-    },
-    {
-      id: 12,
-      title: '🍎 Comer Despacio',
-      tip: 'Masticar bien cada bocado mejora la digestión y reduce calorías',
-      detail: 'Tarda al menos 20 minutos en cada comida. Tu cerebro necesita ese tiempo para recibir la señal de saciedad, evitando que comas de más.',
-      benefit: 'Mejor digestión, control de peso, mayor satisfacción'
-    },
-    {
-      id: 13,
-      title: '📱 Desconexión Digital',
-      tip: 'Apagar pantallas 1 hora antes de dormir mejora el descanso un 35%',
-      detail: 'La luz azul de dispositivos electrónicos suprime la melatonina. Crea una rutina sin pantallas antes de dormir para un sueño más reparador.',
-      benefit: 'Mejor calidad de sueño, menos estrés, ojos descansados'
-    },
-    {
-      id: 14,
-      title: '🧊 Duchas Frías',
-      tip: 'Terminar tu ducha con 30 segundos de agua fría fortalece tu inmunidad',
-      detail: 'El agua fría estimula la producción de glóbulos blancos, mejora la circulación y aumenta el estado de alerta. Comienza gradualmente.',
-      benefit: 'Sistema inmune fuerte, mejor circulación, más energía'
-    },
-    {
-      id: 15,
-      title: '🎵 Música y Salud',
-      tip: 'Escuchar música que te gusta reduce el dolor físico',
-      detail: 'La música libera endorfinas, las hormonas del bienestar. Puede reducir la percepción del dolor hasta en un 21% y disminuir la ansiedad.',
-      benefit: 'Menos dolor, mejor estado de ánimo, menor ansiedad'
-    }
-  ]
-
-  // Funciones auxiliares
-  const showNotification = (message) => {
-    setToastMessage(message)
-    setShowToast(true)
-    setTimeout(() => setShowToast(false), 3000)
-  }
-
-  const navigateWithLoading = (screen, callback) => {
-    setIsLoading(true)
-    setTimeout(() => {
-      if (callback) callback()
-      setCurrentScreen(screen)
-      setIsLoading(false)
-    }, 500)
-  }
-
-  // Navegación rápida sin loading (para evitar parpadeos)
-  const navigateQuick = (screen) => {
-    setCurrentScreen(screen)
-  }
-
-  const handleProfileChange = (profile) => {
-    setCurrentProfile(profile)
-    setShowProfileSelector(false)
-    showNotification(`Perfil cambiado a: ${profile.name}`)
-  }
-
   // Funciones de navegación
-  const goToLogin = () => navigateQuick('login')
-  const goToRegister = () => navigateQuick('register')
+  const goToLogin = () => setCurrentScreen('login')
+  const goToRegister = () => setCurrentScreen('register')
   const goToDashboard = () => {
     setIsLoggedIn(true)
     setCurrentScreen('dashboard')
-    showNotification('¡Bienvenido de vuelta!')
   }
   const goToLanding = () => {
-    navigateWithLoading('landing', () => {
-      setIsLoggedIn(false)
-      setUserMode('patient')
-    })
+    setIsLoggedIn(false)
+    setCurrentScreen('landing')
   }
-  const goToDirectory = () => navigateQuick('directory')
-  const goToHealthInfo = () => navigateQuick('healthInfo')
-  const goToHealthTips = () => navigateQuick('healthTips')
+  const goToDirectory = () => setCurrentScreen('directory')
+  const goToHealthInfo = () => setCurrentScreen('healthInfo')
 
   // Landing Page
   const LandingScreen = () => (
@@ -636,36 +496,16 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-3xl font-bold">¡Bienvenido, {currentProfile.name}!</h1>
+              <h1 className="text-3xl font-bold">¡Bienvenido de vuelta!</h1>
               <p className="text-white/90 mt-1">Gestiona tu salud y la de tus beneficiarios</p>
             </div>
-            <div className="flex gap-3">
-              <button
-                onClick={() => setShowProfileSelector(true)}
-                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-all"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                <span className="hidden sm:inline">{currentProfile.name}</span>
-              </button>
-              <button
-                onClick={() => {
-                  setUserMode('doctor')
-                  setCurrentScreen('doctor-dashboard')
-                }}
-                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-all text-sm"
-              >
-                🩺 <span className="hidden sm:inline">Modo Doctor</span>
-              </button>
-              <button
-                onClick={goToLanding}
-                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-all"
-              >
-                <IconLogout />
-                <span className="hidden sm:inline">Cerrar Sesión</span>
-              </button>
-            </div>
+            <button
+              onClick={goToLanding}
+              className="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-all"
+            >
+              <IconLogout />
+              <span className="hidden sm:inline">Cerrar Sesión</span>
+            </button>
           </div>
         </div>
       </header>
@@ -719,35 +559,16 @@ function App() {
           </button>
 
           <button
-            onClick={goToHealthTips}
+            onClick={goToHealthInfo}
             className="card bg-gradient-to-br from-lime-vibrant-500 to-lime-vibrant-300 text-white hover:shadow-2xl group"
           >
             <div className="flex items-center gap-4">
               <div className="bg-white/20 p-4 rounded-2xl group-hover:scale-110 transition-transform">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
+                <IconHealth />
               </div>
               <div className="text-left">
-                <h3 className="text-2xl font-bold mb-1">Curiosidades Saludables</h3>
-                <p className="text-white/90">Tips médicos para tu vida diaria</p>
-              </div>
-            </div>
-          </button>
-
-          <button
-            onClick={() => setShowChatbot(true)}
-            className="card bg-gradient-to-br from-purple-500 to-pink-500 text-white hover:shadow-2xl group"
-          >
-            <div className="flex items-center gap-4">
-              <div className="bg-white/20 p-4 rounded-2xl group-hover:scale-110 transition-transform">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                </svg>
-              </div>
-              <div className="text-left">
-                <h3 className="text-2xl font-bold mb-1">Sintomatólogo IA</h3>
-                <p className="text-white/90">Evalúa tus síntomas ahora</p>
+                <h3 className="text-2xl font-bold mb-1">Información de Salud</h3>
+                <p className="text-white/90">Identifica situaciones críticas</p>
               </div>
             </div>
           </button>
@@ -778,7 +599,7 @@ function App() {
               <div className="flex justify-center mb-2 text-health-green-600">
                 <IconDoctors />
               </div>
-              <p className="text-3xl font-bold text-health-green-600">3</p>
+              <p className="text-3xl font-bold text-health-green-600">1</p>
               <p className="text-gray-600">Beneficiarios</p>
             </div>
           </div>
@@ -854,15 +675,7 @@ function App() {
                 </div>
               </div>
 
-              <button
-                onClick={() => {
-                  showNotification(`✅ Solicitud enviada a ${doctor.name}`)
-                  setTimeout(() => {
-                    showNotification('📅 Recordatorio: Confirma tu cita con el doctor')
-                  }, 2000)
-                }}
-                className="btn-primary w-full mt-4 text-sm"
-              >
+              <button className="btn-primary w-full mt-4 text-sm">
                 Contactar Ahora
               </button>
             </div>
@@ -987,119 +800,8 @@ function App() {
     </div>
   )
 
-  // Health Tips Screen (Curiosidades Saludables)
-  const HealthTipsScreen = () => (
-    <div className="fade-in min-h-screen">
-      {/* Header */}
-      <header className="bg-gradient-to-r from-lime-vibrant-500 to-lime-vibrant-700 text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center gap-4">
-            <button
-              onClick={goToDashboard}
-              className="bg-white/20 hover:bg-white/30 p-2 rounded-lg transition-all"
-            >
-              <IconBack />
-            </button>
-            <div>
-              <h1 className="text-3xl font-bold">💡 Curiosidades Médicas Saludables</h1>
-              <p className="text-white/90 mt-1">Tips científicos para mejorar tu vida diaria</p>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Info Banner */}
-        <div className="card bg-gradient-to-r from-lime-vibrant-50 to-yellow-50 border-2 border-lime-vibrant-400 mb-8">
-          <div className="flex items-start gap-3">
-            <div className="text-lime-vibrant-600">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="font-bold text-lime-vibrant-900 text-lg mb-1">Tips Respaldados por la Ciencia</h3>
-              <p className="text-lime-vibrant-800">
-                Cada consejo está basado en investigaciones médicas. Pequeños cambios en tu rutina
-                pueden tener un gran impacto en tu salud a largo plazo.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Health Tips Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {healthTips.map((tip) => (
-            <div key={tip.id} className="card bg-white hover:shadow-2xl transition-all">
-              <div className="mb-4">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  {tip.title}
-                </h3>
-                <div className="bg-gradient-to-r from-lime-vibrant-100 to-lime-vibrant-50 p-3 rounded-lg border-l-4 border-lime-vibrant-500">
-                  <p className="text-sm font-semibold text-lime-vibrant-800">
-                    💡 {tip.tip}
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <h4 className="font-semibold text-blue-900 mb-1 text-sm">📖 ¿Por qué funciona?</h4>
-                  <p className="text-sm text-blue-800">{tip.detail}</p>
-                </div>
-
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <h4 className="font-semibold text-green-900 mb-1 text-sm">✅ Beneficios</h4>
-                  <p className="text-sm text-green-800">{tip.benefit}</p>
-                </div>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-gray-200">
-                <button className="text-lime-vibrant-600 hover:text-lime-vibrant-700 font-semibold text-sm flex items-center gap-1">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  ¡Lo aplicaré!
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="card bg-gradient-to-r from-lime-vibrant-500 to-lime-vibrant-700 text-white mt-8">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold mb-3">¿Necesitas más orientación personalizada?</h3>
-            <p className="text-white/90 mb-4">
-              Nuestros especialistas pueden ayudarte a crear un plan de salud adaptado a ti
-            </p>
-            <button
-              onClick={goToDirectory}
-              className="bg-white text-lime-vibrant-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
-            >
-              Consultar con un Especialista
-            </button>
-          </div>
-        </div>
-      </main>
-    </div>
-  )
-
   // Render current screen
   const renderScreen = () => {
-    // Si está en modo doctor y en la pantalla correcta, mostrar DoctorDashboard
-    if (userMode === 'doctor' && currentScreen === 'doctor-dashboard') {
-      return (
-        <DoctorDashboard
-          onSwitchToPatient={() => {
-            setUserMode('patient')
-            setCurrentScreen('dashboard')
-          }}
-          onLogout={goToLanding}
-        />
-      )
-    }
-
     switch (currentScreen) {
       case 'login':
         return <LoginScreen />
@@ -1111,8 +813,6 @@ function App() {
         return <DirectoryScreen />
       case 'healthInfo':
         return <HealthInfoScreen />
-      case 'healthTips':
-        return <HealthTipsScreen />
       default:
         return <LandingScreen />
     }
@@ -1120,36 +820,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      {isLoading ? <SkeletonLoader /> : renderScreen()}
-
-      {/* Toast Notifications */}
-      <Toast
-        message={toastMessage}
-        show={showToast}
-        onClose={() => setShowToast(false)}
-      />
-
-      {/* Profile Selector Modal */}
-      {showProfileSelector && (
-        <ProfileSelector
-          profiles={profiles}
-          currentProfile={currentProfile}
-          onSelectProfile={handleProfileChange}
-          onClose={() => setShowProfileSelector(false)}
-        />
-      )}
-
-      {/* Chatbot Modal */}
-      {showChatbot && (
-        <Chatbot
-          onClose={() => setShowChatbot(false)}
-          onConsultSpecialist={() => {
-            setShowChatbot(false)
-            goToDirectory()
-            showNotification('Buscando especialista para tu caso...')
-          }}
-        />
-      )}
+      {renderScreen()}
     </div>
   )
 }
